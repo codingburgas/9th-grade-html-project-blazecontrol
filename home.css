@@ -124,3 +124,9 @@ footer
 #theme-toggler:hover {
   background-color: var(--navbar-hover);
 }
+
+
+img{
+  width: 15cm;
+  height: 10cm;
+}

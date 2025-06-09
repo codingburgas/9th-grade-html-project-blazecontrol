@@ -131,7 +131,7 @@ margin: 30px 0;
 .paper a:hover
 {
     text-decoration: underline;
-    color: white;
+    color: rgb(255, 255, 255);
     opacity: 70%;
 }
 
