@@ -84,3 +84,8 @@ html[style*="color-scheme: light"] {
 div {
   margin: auto;
 }
+
+img:hover
+{
+  opacity: 70%;
+}
