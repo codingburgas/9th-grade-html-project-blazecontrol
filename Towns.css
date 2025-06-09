@@ -18,7 +18,9 @@ html[style*="color-scheme: light"] {
   --sidebar-text: red;
   --sidebar-link: white;
 }
+
 .sidebar {
+  margin: auto;
   width: 1500px;
   color: var(--sidebar-text);
   height: 1000px;
@@ -81,14 +83,6 @@ html[style*="color-scheme: light"] {
   border-radius: 3px;
 }
 
-.sidebar {
-  margin: auto;
-  width: 1500px;
-  color: var(--sidebar-text);
-  height: 1000px;
-  padding: 20px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+img:hover {
+  opacity: 70%;
 }
