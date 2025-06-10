@@ -16,11 +16,13 @@ button {
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 100%;
 }
 
 button:hover {
   opacity: 0.8;
+}
+.btn{
+  width: 100%;
 }
 
 .cancelbtn {
@@ -113,7 +115,7 @@ span.psw {
   }
 }
 
-h1{
+h1, h3, p{
     color: black;
     text-align: center;
 }
