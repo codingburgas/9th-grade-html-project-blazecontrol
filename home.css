@@ -129,4 +129,34 @@ footer
 img{
   width: 15cm;
   height: 10cm;
+  cursor: pointer;
+}
+img:hover{
+  width: 15cm;
+  height: 10cm;
+  opacity: 70%;
+}
+
+table{
+  width: 50%;
+}
+.fire_Today td{
+  width: 20%;
+}
+
+.fire_Today p
+{
+  font-size: 20px;
+  font-weight: 600;
+}
+.fire_Today a
+{
+     text-decoration: none;
+     color: #c10000;
+}
+
+.fire_Today a:hover
+{
+     text-decoration: underline;
+     color: #ae0000;
 }
