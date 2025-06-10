@@ -127,13 +127,11 @@ footer
 
 
 img{
-  width: 15cm;
-  height: 10cm;
+  width: 12cm;
+  height: 7cm;
   cursor: pointer;
 }
 img:hover{
-  width: 15cm;
-  height: 10cm;
   opacity: 70%;
 }
 
@@ -159,4 +157,7 @@ table{
 {
      text-decoration: underline;
      color: #ae0000;
+}
+table, th, td {
+  border: 1px solid black;
 }
