@@ -158,6 +158,3 @@ table{
      text-decoration: underline;
      color: #ae0000;
 }
-table, th, td {
-  border: 1px solid black;
-}
