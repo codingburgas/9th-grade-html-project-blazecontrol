@@ -81,6 +81,7 @@ footer {
 }
 
 .navbar {
+  height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -91,7 +92,17 @@ footer {
 
 .navbar ul {
   margin: 0;
+  align-items: center;
   padding: 0;
+}
+.nav-links img
+{
+  height: 40px; 
+  width: auto;
+  object-fit: contain;
+  margin-right: 10px; 
+  vertical-align: middle;
+  max-height: 40px;
 }
 
 .navbar ul li {
@@ -135,13 +146,13 @@ footer {
   background-color: var(--navbar-hover);
 }
 
-img {
+.fire_Today img{
   width: 12cm;
   height: 7cm;
   cursor: pointer;
 }
 
-img:hover {
+.fire_Today img:hover {
   opacity: 70%;
 }
 
