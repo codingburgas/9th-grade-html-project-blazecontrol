@@ -1,0 +1,88 @@
+:root {
+  --sidebar-bg: red;
+  --sidebar-hover: #cc3e3e;
+  --sidebar-text: red;
+  --sidebar-link: white;
+}
+
+html[style*="color-scheme: dark"] {
+  --sidebar-bg: #333;
+  --sidebar-hover: #444;
+  --sidebar-text: white;
+  --sidebar-link: white;
+}
+
+html[style*="color-scheme: light"] {
+  --sidebar-bg: red;
+  --sidebar-hover: #cc3e3e;
+  --sidebar-text: red;
+  --sidebar-link: white;
+}
+
+.sidebar {
+  margin: auto;
+  width: 1500px;
+  color: var(--sidebar-text);
+  height: 1000px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: min-content;
+  gap: 70px;
+  width: 100%;
+}
+
+.sidebar ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--sidebar-bg);
+  border-radius: 4px;
+  padding: 8px;
+  margin: 0;
+  transition: background-color 0.3s;
+}
+
+.sidebar ul li:hover {
+  background-color: var(--sidebar-hover);
+}
+
+.sidebar ul li a {
+  color: var(--sidebar-link);
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  flex-grow: 1;
+  align-items: center;
+  gap: 10px;
+}
+
+.sidebar ul li img {
+  width: 650px;
+  height: 150px;
+  padding-top: 10px;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+img:hover {
+  opacity: 70%;
+}

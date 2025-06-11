@@ -1,47 +1,45 @@
-body 
-{
+body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  transition: background 0.3s, color 0.3s;
   display: grid;
   grid-template-rows: 1fr auto;
-}
-
-:root 
-{
-  color-scheme: light dark;
-  --bg-color: white;
-  --text-color: red;
-  --navbar-bg: red;
-  --navbar-text: white;
-  --navbar-hover: #cc3e3e;
-
   background: var(--bg-color);
   color: var(--text-color);
 }
 
-html[style*="color-scheme: dark"]
- {
-
-  --bg-color: black;
-  --text-color: red;
-  --navbar-bg: #222;
-  --navbar-text: white;
-  --navbar-hover: #444;
-}
-
-html[style*="color-scheme: light"] 
-{
+:root {
+  color-scheme: light dark;
 
   --bg-color: white;
   --text-color: red;
   --navbar-bg: red;
   --navbar-text: white;
   --navbar-hover: #cc3e3e;
+  --link-color: #c10000;
+  --link-hover: #ae0000;
 }
 
-header 
-{
+html[style*="color-scheme: dark"] {
+  --bg-color: black;
+  --text-color: white;
+  --navbar-bg: #222;
+  --navbar-text: white;
+  --navbar-hover: #444;
+  --link-color: #ffffff;
+  --link-hover: #bbbbbb;
+}
+
+html[style*="color-scheme: light"] {
+  --bg-color: white;
+  --text-color: red;
+  --navbar-bg: red;
+  --navbar-text: white;
+  --navbar-hover: #cc3e3e;
+  --link-color: #c10000;
+  --link-hover: #ae0000;
+}
+
+header {
   background: var(--navbar-bg);
   color: var(--navbar-text);
   border-radius: 0 0 10px 10px;
@@ -49,8 +47,7 @@ header
   transition: background 0.3s, color 0.3s;
 }
 
-footer 
-{
+footer {
   position: absolute;
   bottom: 0;
   background: var(--navbar-bg);
@@ -63,52 +60,45 @@ footer
   transition: background 0.3s, color 0.3s;
 }
 
-.navbar 
-{
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
   background: var(--navbar-bg);
   color: var(--navbar-text);
-  transition: background 0.3s, color 0.3s;
 }
 
-.navbar ul 
-{
+.navbar ul {
   margin: 0;
   padding: 0;
 }
 
-.navbar ul li 
-{
+.navbar ul li {
   list-style: none;
 }
 
-.navbar ul li:hover 
-{
+.navbar ul li:hover {
   background-color: var(--navbar-hover);
 }
 
-.logo 
-{
+.logo {
   font-size: 2rem;
   font-weight: bold;
 }
 
-.nav-links 
-{
+.nav-links {
   list-style: none;
   display: flex;
   gap: 2rem;
 }
 
-.nav-links li a 
-{
+.nav-links li a {
   color: var(--navbar-text);
   text-decoration: none;
   padding: 0.5rem;
 }
+
 #theme-toggler {
   background-color: var(--navbar-bg);
   color: var(--navbar-text);
@@ -125,36 +115,42 @@ footer
   background-color: var(--navbar-hover);
 }
 
-
-img{
+img {
   width: 12cm;
   height: 7cm;
   cursor: pointer;
 }
-img:hover{
+
+img:hover {
   opacity: 70%;
 }
 
-table{
+table {
   width: 50%;
-}
-.fire_Today td{
-  width: 20%;
+  background-color: transparent;
+  color: var(--text-color);
 }
 
-.fire_Today p
-{
+.fire_Today p {
   font-size: 20px;
   font-weight: 600;
-}
-.fire_Today a
-{
-     text-decoration: none;
-     color: #c10000;
+  color: var(--text-color);
 }
 
+<<<<<<< HEAD
 .fire_Today a:hover
 {
      text-decoration: underline;
      color: #ae0000;
 }
+=======
+.fire_Today a {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+.fire_Today a:hover {
+  text-decoration: underline;
+  color: var(--link-hover);
+}
+>>>>>>> 617f2d5ce309c9ef6136ee5f685035214ca2090f
