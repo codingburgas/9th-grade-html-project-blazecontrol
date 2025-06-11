@@ -16,13 +16,13 @@
 }
 
 html[style*="color-scheme: dark"] {
-  --bg-color: #121212;
+  --bg-color: black;
   --text-color: #fff;
 
   --btn-bg: #aa0000;
   --btn-text: white;
 
-  --modal-bg: #1e1e1e;
+  --modal-bg: black;
   --modal-text: white;
   --modal-border: #444;
 

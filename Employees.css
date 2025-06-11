@@ -12,9 +12,9 @@
 }
 
 html[style*="color-scheme: dark"] {
-  --bg-color: #1e1e1e;
+  --bg-color: black;
   --text-color: #f1f1f1;
-  --input-bg: #333;
+  --input-bg: black;
   --input-border: #555;
   --modal-bg: rgba(0,0,0,0.8);
   --button-bg: #06c487;

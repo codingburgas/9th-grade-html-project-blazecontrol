@@ -37,7 +37,7 @@ This website is dedicated to providing information about fire services in Bulgar
  
 <p1>👉🏼 Grigor Sacharov . 9A . front-end developer | GRSacharov23@codingbugas.bg 👈🏼<p1><br>
 <p2>👉🏼 Asen Kokalarov . 9Г . back-end developer | ADKokalarov23@codingburgas.bg 👈🏼<p2><br>
-<p3>👉🏼 Viktor Nikolov . 9В . scrum trainer | VNikolov23@codingburgas.bg 👈🏼<p3><br>
+<p3>👉🏼 Viktor Nikolov . 9В . scrum trainer | VBNikolov23@codingburgas.bg 👈🏼<p3><br>
  
     
 <h2 id="download">Download</h2>
