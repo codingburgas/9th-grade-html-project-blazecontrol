@@ -10,9 +10,7 @@ map.on('click', function (e) {
     var marker = L.marker([e.latlng.lat, e.latlng.lng]).addTo(map);
     marker.bindPopup("You clicked at:<br>" + e.latlng.lat.toFixed(5) + ", " + e.latlng.lng.toFixed(5)).openPopup();
 
-    // Double-click the marker to remove it
     marker.on('dblclick', function (event) {
-        // Prevent the map's default double-click behavior
         event.originalEvent.stopPropagation();
         map.removeLayer(marker);
     });

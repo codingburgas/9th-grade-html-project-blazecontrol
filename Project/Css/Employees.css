@@ -65,19 +65,17 @@ button:hover {
   color: white;
 }
 
-.imgcontainer {
+.container img{
   text-align: center;
   margin: 24px 0 12px 0;
   position: relative;
 }
 
-img.avatar {
-  width: 40%;
-  border-radius: 50%;
-}
-
 .container {
   padding: 16px;
+}
+img{
+  max-height: 20%;
 }
 
 span.psw {
@@ -149,3 +147,4 @@ h1, h3, p {
   color: var(--text-color);
   text-align: center;
 }
+
