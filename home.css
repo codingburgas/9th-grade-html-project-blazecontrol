@@ -127,6 +127,7 @@ img:hover {
 
 table {
   width: 50%;
+  text-align: center;
   background-color: transparent;
   color: var(--text-color);
 }
@@ -137,13 +138,11 @@ table {
   color: var(--text-color);
 }
 
-<<<<<<< HEAD
 .fire_Today a:hover
 {
      text-decoration: underline;
      color: #ae0000;
 }
-=======
 .fire_Today a {
   text-decoration: none;
   color: var(--link-color);
@@ -153,4 +152,3 @@ table {
   text-decoration: underline;
   color: var(--link-hover);
 }
->>>>>>> 617f2d5ce309c9ef6136ee5f685035214ca2090f

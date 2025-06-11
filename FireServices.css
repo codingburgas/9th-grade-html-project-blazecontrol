@@ -1,0 +1,4 @@
+ body { font-family: Arial, sans-serif; margin: 20px; background: #f9f9f9; }
+    h1, h2 { color: darkred; }
+    .service-section { margin-bottom: 30px; }
+    ul { list-style: square; }
