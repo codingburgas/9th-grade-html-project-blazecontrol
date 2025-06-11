@@ -1,82 +1,166 @@
- 
- h1, h2 
-{ 
-color: darkred; 
+:root {
+  color-scheme: light dark;
+
+  --bg-color: white;
+  --text-color: darkred;
+
+  --btn-bg: darkred;
+  --btn-text: white;
+
+  --modal-bg: white;
+  --modal-text: black;
+  --modal-border: #ccc;
+
+  --highlight-box-bg: #ffeaea;
+  --highlight-box-border: darkred;
 }
-.service-section { margin-bottom: 30px; }
-ul { list-style: square; }
+
+html[style*="color-scheme: dark"] {
+  --bg-color: #121212;
+  --text-color: #fff;
+
+  --btn-bg: #aa0000;
+  --btn-text: white;
+
+  --modal-bg: #1e1e1e;
+  --modal-text: white;
+  --modal-border: #444;
+
+  --highlight-box-bg: #2c2c2c;
+  --highlight-box-border: #ff4d4d;
+}
+
+html[style*="color-scheme: light"] {
+  --bg-color: white;
+  --text-color: darkred;
+
+  --btn-bg: darkred;
+  --btn-text: white;
+
+  --modal-bg: white;
+  --modal-text: black;
+  --modal-border: #ccc;
+
+  --highlight-box-bg: #ffeaea;
+  --highlight-box-border: darkred;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      padding: 20px;
-      margin: 20px
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+main {
+  flex: 1;
+  padding-bottom: 50px;
+}
+
+h1, h2 {
+  color: var(--text-color);
+}
+
+.service-section {
+  margin-bottom: 5px;
+  padding: 15px;
+}
+
+ul {
+  list-style: square;
+  color: var(--text-color);
+  padding-left: 20px;
 }
 
 .report-btn {
-      padding: 12px 20px;
-      background-color: darkred;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 16px;
+  padding: 12px 20px;
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 20px;
 }
 
-    /* Modal styles */
+/* Modal */
 .modal {
-      display: none;
-      position: fixed;
-      z-index: 1000;
-      left: 0; top: 0;
-      width: 100%; height: 100%;
-      overflow: auto;
-      background-color: rgba(0,0,0,0.5);
-    }
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
 
-    .modal-content {
-      background-color: white;
-      margin: 10% auto;
-      padding: 20px;
-      border-radius: 10px;
-      width: 90%;
-      max-width: 400px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
+.modal-content {
+  background-color: var(--modal-bg);
+  color: var(--modal-text);
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
 
-    .modal-content h2 {
-      margin-top: 0;
-      color: darkred;
-    }
+.modal-content h2 {
+  margin-top: 0;
+  color: var(--text-color);
+}
 
-    .modal-content label {
-      display: block;
-      margin: 10px 0 5px;
-    }
+.modal-content label {
+  display: block;
+  margin: 10px 0 5px;
+}
 
-    .modal-content input, .modal-content textarea {
-      width: 100%;
-      padding: 8px;
-      margin-bottom: 10px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-    }
+.modal-content input,
+.modal-content textarea,
+.modal-content select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background: var(--bg-color);
+  color: var(--text-color);
+  border: 1px solid var(--modal-border);
+}
 
-    .modal-content button {
-      background-color: darkred;
-      color: white;
-      border: none;
-      padding: 10px 16px;
-      border-radius: 6px;
-      cursor: pointer;
-    }
+.modal-content button {
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
 
-    .close-btn {
-      float: right;
-      font-size: 20px;
-      cursor: pointer;
-      color: #aaa;
-    }
+.close-btn {
+  float: right;
+  font-size: 20px;
+  cursor: pointer;
+  color: #aaa;
+}
 
-    .close-btn:hover {
-      color: black;
-    }
+.close-btn:hover {
+  color: var(--text-color);
+}
+
+/* Selected info box */
+#selected-info {
+  margin: 20px;
+  padding: 12px;
+  background-color: var(--highlight-box-bg);
+  border-left: 5px solid var(--highlight-box-border);
+  display: none;
+  color: var(--text-color);
+}

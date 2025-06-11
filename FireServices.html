@@ -1,9 +1,12 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Fire Services - City Fire Department</title>
-  <link rel="stylesheet" href="home.css" />
-  <link rel="stylesheet" href="FireServices.css" />
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="FireServices.css">
+  <script src="theme.js"></script>
+  <script src="FireServices.js"></script>
 </head>
 <body>
 <header>
@@ -20,9 +23,9 @@
     </ul>
     <button id="theme-toggler">Color The</button>
   </nav>
-  <script src="theme.js"></script>
 </header>
 
+<main>
   <section class="service-section">
     <h2>Our Fire Services</h2>
     <p>We provide 24/7 emergency response, prevention education, and specialized rescue services across our community.</p>
@@ -61,35 +64,46 @@
     <strong>Non-Emergency:</strong> (555) 123-4567<br>
     <strong>Email:</strong> contact@cityfire.gov</p>
   </section>
+
   <button class="report-btn" onclick="openModal()">Report a Fire</button>
 
   <div id="reportModal" class="modal">
     <div class="modal-content">
       <span class="close-btn" onclick="closeModal()">&times;</span>
       <h2>Report a Fire</h2>
-      <form id="fireReportForm" onsubmit="submitReport(event)" style="display: flex; flex-direction: column; gap: 12px;">
-  <label for="address">Address:</label>
-  <input type="text" id="address" name="address" required>
+      <form id="fireReportForm" onsubmit="submitReport(event)">
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required>
 
-  <label for="reason">Reason for Fire:</label>
-  <select id="reason" name="reason" required>
-    <option value="">-- Select Reason --</option>
-    <option value="Electrical Fire">Electrical Fire</option>
-    <option value="Kitchen Fire">Kitchen Fire</option>
-    <option value="Forest/Wildfire">Forest/Wildfire</option>
-    <option value="Vehicle Fire">Vehicle Fire</option>
-    <option value="Gas Explosion">Gas Explosion</option>
-  </select>
+        <label for="reason">Reason for Fire:</label>
+        <select id="reason" name="reason" required>
+          <option value="">-- Select Reason --</option>
+          <option value="Electrical Fire">Electrical Fire</option>
+          <option value="Kitchen Fire">Kitchen Fire</option>
+          <option value="Forest/Wildfire">Forest/Wildfire</option>
+          <option value="Vehicle Fire">Vehicle Fire</option>
+          <option value="Gas Explosion">Gas Explosion</option>
+        </select>
 
-  <button type="submit">Submit Report</button>
-</form>
+        <label for="truck">Select Fire Truck:</label>
+        <select id="truck" name="truck" required>
+          <option value="">-- Select Fire Truck --</option>
+          <option value="Engine Truck">Engine Truck</option>
+          <option value="Ladder Truck">Ladder Truck</option>
+          <option value="Rescue Truck">Rescue Truck</option>
+          <option value="Brush Truck">Brush Truck</option>
+        </select>
+
+        <button type="submit">Submit Report</button>
+      </form>
     </div>
   </div>
-  <script src="FireServices.js"></script>
+
+  <div id="selected-info"></div>
+</main>
 
   <footer>
-    <p>&copy; 2025 City Fire Department. All rights reserved.</p>
+    <p>&copy; Blaze Control. All rights reserved.</p>
   </footer>
-
 </body>
 </html>
